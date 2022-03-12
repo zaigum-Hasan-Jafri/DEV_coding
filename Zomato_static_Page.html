@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width" , initial-scale="1.0">
+    <title style="font-weight: 200;">Zomato</title>
+    <link rel="icon" type="image/png" href=https://b.zmtcdn.com/images/logo/zomato_logo_2017.png>
+    <style>
+        #img {
+            position: absolute;
+
+            top: 0%;
+            left: 0%;
+
+            opacity: 1;
+            z-index: 0;
+        }
+
+        .navigation {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            position: static;
+            border: #FFFFFF;
+            border-color: #FFFFFF;
+            left: 24vw;
+            top: 49vh;
+            font-weight: 700;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header {
+            display: flex;
+            margin: 1vh 6vw;
+            position: relative;
+            margin-top: -8px;
+            float: right;
+            padding: 10px;
+            color: #ffffff;
+        }
+
+        #text {
+            display: flex;
+            position: absolute;
+            left: 280px;
+            top: 60px;
+            text-align: center;
+            font-size: 45px;
+            font-weight: 800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+
+        #zomato {
+            position: absolute;
+            font-style: italic;
+            font-size: 500%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: whitesmoke;
+            opacity: 11;
+            top: 150px;
+            left: 570px;
+        }
+
+        #box {
+            position: absolute;
+
+            top: 330px;
+            left: 458px;
+            width: 477px;
+            height: 40px;
+            padding-top: 20px;
+            padding-left: 20px;
+            border-radius: 29px;
+            background: #ffffff 6% 10% no-repeat padding-box;
+            opacity: 2;
+        }
+
+        .rect {
+            top: 195px;
+            left: 113px;
+            width: 260px;
+            height: 900px;
+            background: #fffcfc 0% 0% no-repeat padding-box;
+            box-shadow: 0px 8px 6px #00000075;
+            opacity: 1;
+        }
+
+        .hori {
+            position: absolute;
+            margin-top: -450px;
+            left: 340px;
+            width: 860px;
+            height: 291px;
+            background: #fffcfc 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #0000008a;
+            opacity: 1;
+        }
+
+        .small_box_01 {
+            position: relative;
+            top: 0px;
+            left: 23px;
+            width: 250px;
+            height: 120px;
+            background: #e4e1e1 0% 21% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000091;
+            opacity: 1;
+        }
+        .small_box_01 img{
+            width: 50%;
+            height: 100%;
+            border-radius: 15px;
+            z-index: -1;
+        }
+        .small_box_01 span{
+            display: block;
+            float: right;
+            padding-right: 5%;
+            padding-top: 10%;
+            font:message-box;
+            font-variant: small-caps;
+        }
+
+        .small_box_02 {
+            position: relative;
+            top: -272px;
+            left: 300px;
+            width: 250px;
+            height: 120px;
+            background: #dfdada 0% 21% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #1a1717dc;
+            opacity: 1;
+        }
+        .small_box_02 img{
+            width: 50%;
+            height: 100%;
+            border-radius: 15px;
+            z-index: -1;
+        }
+        .small_box_02 span{
+            display: block;
+            float: right;
+            padding-right: 5%;
+            padding-top: 10%;
+            font:message-box;
+            font-variant: small-caps;
+        }
+        .small_box_03 {
+            display: block;
+            position: relative;
+            top: -543px;
+            left: 580px;
+            width: 250px;
+            height: 120px;
+            background: #e4dede 0% 21% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000096;
+            opacity: 1;
+        }
+        .small_box_03 img{
+            width: 50%;
+            height: 100%;
+            border-radius: 15px;
+            z-index: -1;
+        }
+        .small_box_03 span{
+            display: block;
+            float: right;
+            padding-right: 5%;
+            padding-top: 10%;
+            font:message-box;
+            font-variant: small-caps;
+        }
+        .quick {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            position: absolute;
+            top: 59vh;
+            font-size: 13px;
+        }
+
+        .cuisine {
+            position: relative;
+            padding-top: 1px;
+            top: 425px;
+            left: 13px;
+            width: 55px;
+            height: 20px;
+            text-align: left;
+            font: normal normal 600 18px/27px Poppins;
+            letter-spacing: 0px;
+            color: #192F60;
+            opacity: 1;
+        }
+
+        pre {
+            color: #8C96AB;
+            opacity: 1;
+            font: normal normal normal 16px/24px Poppins;
+        }
+
+        span {
+            color: #192F60;
+            font: normal normal 600 18px/27px Poppins;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div><img id="img" src="./zomato_images_assigment/real_background.jpg" class="high-res-image" alt="" alt="Error 404"
+            width="1370px" height="400px">
+
+        <pre id="text" style="position: absolute;">Find the best restaurants, cafés and bars <br>
+in India
+        </pre>
+
+
+        <p id="zomato">
+            Zomato
+        </p>
+        <div>
+            <header>
+                <ul> <a href=""><button type="submit"
+                            style="color: white; background-color: rgba(255, 255, 255, 0);">Get app</button></a> </ul>
+                <ul> <a href=""><button type="submit"
+                            style="color: white; background-color: rgba(255, 255, 255, 0);">Add restraunt</button></a>
+                </ul>
+                <ul> <a href=""><button type="submit"
+                            style="color: white; background-color: rgba(255, 255, 255, 0);">Sign up</button></a> </ul>
+                <ul> <a href=""><button type="submit"
+                            style="color: white; background-color: rgba(255, 255, 255, 0);">Log in</button></a> </ul>
+            </header>
+        </div>
+        <div id="box">
+            <div class="navigation">
+                <select name="city" id="city01" title="choose the city">
+                    <label>Location</label>
+                    <option value="Location">Location</option>
+                    <option value="banglore">Agra restaurants</option>
+                    <option value="banglore">Ahmedabad restaurants</option>
+                    <option value="banglore">Ajmer restaurants</option>
+                    <option value="banglore">Alappuzha restaurants</option>
+                    <option value="banglore">Allahabad restaurants</option>
+                    <option value="banglore">Amravati restaurants</option>
+                    <option value="banglore">Amritsar restaurants</option>
+                    <option value="banglore">Bengaluru restaurants</option>
+                    <option value="banglore">Bhopal restaurants</option>
+                    <option value="banglore">Chandigarh restaurants</option>
+                    <option value="banglore">Chennai restaurants</option>
+                    <option value="banglore">cuttack restaurants</option>
+                    <option value="banglore">Dehradun restaurants</option>
+                    <option value="banglore">Delhi NCR restaurants</option>
+                    <option value="banglore">Dharamshala restaurants</option>
+                    <option value="banglore">Gunntur restaurants</option>
+                    <option value="banglore">Goa restaurants</option>
+                    <option value="banglore">Gorakhpur restaurants</option>
+                    <option value="banglore">Haridwar restaurants</option>
+                    <option value="banglore">Hyderabad restaurants</option>
+                    <option value="banglore">Indore restaurants</option>
+                    <option value="banglore">Jabalpur restaurants</option>
+                    <option value="banglore">Jaipur restaurants</option>
+                    <option value="banglore">Jammu restaurants</option>
+                    <option value="banglore">Jhansi restaurants</option>
+                    <option value="banglore">Kajuraho restaurants</option>
+                    <option value="banglore">kota restaurants</option>
+                    <option value="banglore">Kochi restaurants</option>
+                    <option value="banglore">kharagpur restaurants</option>
+                    <option value="banglore">kolkata restaurants</option>
+                    <option value="banglore">Kolhapur restaurants</option>
+                    <option value="banglore">Kanpur restaurants</option>
+                    <option value="banglore">Lucknow restaurants</option>
+                    <option value="banglore">Ludhiana restaurants</option>
+                    <option value="banglore">Madurai restaurants</option>
+                    <option value="banglore">Manali restaurants</option>
+                    <option value="banglore">Meerut restaurants</option>
+                    <option value="banglore">Mumbai restaurants</option>
+                    <option value="banglore">Manipal restaurants</option>
+                    <option value="banglore">Mysore restaurants</option>
+                    <option value="banglore">Nagpur restaurants</option>
+                    <option value="banglore">Nainital restaurants</option>
+                    <option value="banglore">Ooty restaurants</option>
+                    <option value="banglore">Pune restaurants</option>
+                    <option value="banglore">Patna restaurants</option>
+                    <option value="banglore">Raipur restaurants</option>
+                    <option value="banglore">Ranchi restaurants</option>
+                    <option value="banglore">Shimla restaurants</option>
+                    <option value="banglore">Srinagar restaurants</option>
+                    <option value="banglore">Tirupati restaurants</option>
+                    <option value="banglore">Thrissur restaurants</option>
+                    <option value="banglore">Tirupati restaurants</option>
+
+                </select>
+
+                <input type="search" title="search for the food" value="" placeholder="search the desire food"
+                    id="search_01">
+                <input type="submit" value="Search">
+            </div>
+        </div>
+        <div class="quick">
+            <h1>
+                QUICK SEARCH</h1>
+        </div><br>
+        <div class="rect">
+            <div class="cuisine">
+                <span>Cuisine</span>
+                <pre>
+<input type="checkbox" name="north" id="">North Indian 
+<input type="checkbox" name="south" id="">south Indian 
+<input type="checkbox" name="Cuisine" id="">Cuisine 
+<input type="checkbox" name="Fast" id="">Fast Food
+<input type="checkbox" name="Street" id="">Street Food <br>
+<span >Cost for Two</span>
+<input type="radio" name="Less" id="">Less than 500
+<input type="radio" name="500" id="">500-1000
+<input type="radio" name="1000" id="">1000-2000
+<input type="radio" name="2000" id="">2000+ <br>
+<span>sort</span>
+<input type="radio" name="1000" id="">Price low to high
+<input type="radio" name="2000" id="">Price High to Low
+</pre>
+            </div>
+        </div>
+        <div class="hori">
+            <div>
+                <p class="small_box_01">
+                <img src="./zomato_images_assigment/shutterstock_1304064250@2x.png" alt="file missing">
+                <span>Nightlife</span></p>
+                <p class="small_box_01">
+                    <img src="./zomato_images_assigment/breakfast_bread_cheese.jpg" alt="file missing">
+                    <span>breakfast</span>
+                </p>
+            </div>
+            <div>
+                <p class="small_box_02">
+                    <img src="./zomato_images_assigment/lunch_full_plate.jpg" alt="file missing">
+                    <span>Lunch</span>
+                </p>
+                <p class="small_box_02">
+                    <img src="./zomato_images_assigment/download.jpg" alt="file missing">
+                    <span>Drinks</span>
+                </p>
+            </div>
+            <div>
+                <p class="small_box_03">
+                    <img src="./zomato_images_assigment/dinner_full_table.jpg" alt="file missing">
+                    <span>Dinner</span>
+                </p>
+                <p class="small_box_03">
+                    <img src="./zomato_images_assigment/background.jpg" alt="file missing">
+                    <span>Snacks</span>
+                </p>
+            </div>
+        </div>
+
+</body>
+
+</html>
